@@ -11,7 +11,7 @@ She has asked for help writing some programs that will automatically download in
 * Learn how to write software using the Unix philosophy: i.e., how to pass data between programs with piping/stdin/stdout.
 * Use test-driven development to write robust a computer program for a well-defined task.
 
-##
+## Requirements
 
 Our collaborator's plotting script expects the data in a particular format.
 We must write our scripts so that they print out data in the following format.
