@@ -38,8 +38,11 @@ The weather data is accessible online at the following locations.
 
 For this exercise, we will split into two groups.
 Each group will be in charge of writing a program to download and process weather data.
-We will all work together to discuss what the two programs should do and how they should talk to each other, and then write unit tests for validating correct behavior.
-Then we will split up into the two groups to write code that satisfies our unit tests.
+
+* First, we will all work together to discuss what the two programs should do and how they should talk to each other.
+* Next, we will all work together to write unit tests for validating correct behavior.
+* Then we will split up into the two groups to write code that satisfies our unit tests.
+
 If all goes well, once the two scripts are passing the unit tests, they should be able to communicate properly with each other and with the plotting script.
 
 ## Stretch goals
