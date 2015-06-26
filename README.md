@@ -19,23 +19,23 @@ The script reads from standard input (stdin), and requires four tab-separated va
 * The latitude of the station (Illinois is north of the equator, so this coordinate should be positive).
 * The temperature, in Fahrenheit, of the next available forecast.
 
-## Objective
-
-For this exercise, we will split up into two groups.
-Group 1 will write a program called `grab-stations.py` that will download and print the 4-letter label for each Illinois weather station and the corresponding coordinates.
-Group 2 will write a program called `grab-forecast.py` that will download a national weather forecast, and then use the output from `grab-stations.py` to extract and print the temperature of the latest forecast for each station.
-
-The objectives of this exercise are as follows.
+## Learning objectives
 
 * Learn how to write software using the Unix philosophy: i.e., how to pass data between programs with piping/stdin/stdout.
-* Use test-driven development to write a computer program for a well-defined task.
+* Use test-driven development to write robust a computer program for a well-defined task.
 
-## Goals
+## The plan
+
+For this exercise, we will split into two groups.
+Each group will be in charge of writing a program to download and process weather data.
+We will all work together to discuss what the two programs should do and how they should talk to each other, and then write unit tests for validating correct behavior.
+Then we will split up into the two groups to write code that satisfies our unit tests.
+If all goes well, once the two scripts are passing the unit tests, they should be able to communicate properly with each other and with the plotting script.
+
+## The data
 
 The page http://www.nws.noaa.gov/mdl/gfslamp/docs/stations_info.shtml has information about all of the National Weather Service weather stations in the US: a 4-letter label, a name, a 2-letter state abbreviation, and the latitude/longitude coordinates for that station.
 The page http://www.nws.noaa.gov/mdl/gfslamp/lavlamp.shtml has an hourly forecast for each weather station for the next 24 hours.
-We will then work together to write unit tests, defining what the behavior of our two programs should.
-This will ensure they communicate properly with each other and the collaborator's plotting script.
 
 ## Stretch goals
 
