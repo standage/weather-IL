@@ -2,9 +2,22 @@
 
 ## Background
 
-A collaborator has a script, `plot-forecast.py`, that given (data in the correct format) will plot the weather forecast for NWS weather stations in Illinois.
-However, she has been manually downloading and formatting the data herself, which is very tedious and time-consuming.
-She needs help writing some programs that will download information about all of the weather stations in Illinois and the latest forecast for those weather stations.
+Imagine we have a collaborator who has a script for plotting the weather forecast for weather stations in Illinois.
+Unfortunately, she has been manually downloading and formatting the National Weather Service data herself, which is very tedious and time-consuming.
+She needs help writing some programs that will download information about all of the weather stations in Illinois, the latest forecast for those weather stations, and feed this data into her plotting program in a particular format, as described below.
+
+```
+K1H2	-88.53	+39.07	+72
+KAAA	-89.33	+40.16	+75
+KALN	-90.05	+38.88	+74
+```
+
+The script requires four tab-separated values.
+
+* The 4-letter label for each weather station.
+* The longitude of the station (Illinois is west of the prime meridian, so this coordinate should be negative).
+* The latitude of the station (Illinois is north of the equator, so this coordinate should be positive).
+* The temperature, in Fahrenheit, of the next available forecast.
 
 ## Objective
 
